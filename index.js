@@ -1,3 +1,5 @@
+/* eslint promise/prefer-await-to-then: off */
+
 const ns = require('node-schedule');
 const debug = require('debug')('TaskList');
 
