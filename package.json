@@ -1,13 +1,24 @@
 {
-  "name": "TaskList",
-  "version": "0.0.1",
+  "name": "@ima-worldhealth/tasklist",
+  "version": "1.0.0",
   "description": "A simple scheduler for cron-based tasks.",
   "main": "index.js",
   "author": "jniles",
   "license": "MIT",
+  "keywords" : [
+    "cron",
+    "tasks",
+    "scheduler",
+    "schedule"
+  ],
+  "engines" : {
+    "node" : ">=v8.10.0"
+  },
   "scripts": {
+    "preversion" : "yarn test",
     "test": "xo && nyc ava",
-    "release": "standard-version"
+    "release": "standard-version",
+    "postversion": "git push && git push --tags"
   },
   "dependencies": {
     "debug": "^3.1.0",
