@@ -101,3 +101,8 @@ test('#run() errors will not stop execution of the task chain if haltOnError = f
   await task.run();
   t.deepEqual(arr, [1, 2, 3]);
 });
+
+test('#toString() should return a string', t => {
+  const task = new Task('StringyTest');
+  t.true(isStr(task.toString()));
+});

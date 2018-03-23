@@ -6,7 +6,7 @@
   "author": "jniles",
   "license": "MIT",
   "scripts": {
-    "test": "xo && ava",
+    "test": "xo && nyc ava",
     "release": "standard-version"
   },
   "dependencies": {
@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "ava": "^0.25.0",
+    "nyc": "^11.6.0",
     "standard-version": "^4.3.0",
     "xo": "^0.20.3"
   },

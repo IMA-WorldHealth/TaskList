@@ -1,5 +1,8 @@
 # TaskList
 
+[![Build Status](https://travis-ci.org/IMA-WorldHealth/TaskList.svg?branch=master)](https://travis-ci.org/IMA-WorldHealth/TaskList)
+[![Coverage Status](https://coveralls.io/repos/github/IMA-WorldHealth/TaskList/badge.svg?branch=master)](https://coveralls.io/github/IMA-WorldHealth/TaskList?branch=master)
+
 TaskList is a cron-like scheduler to make running tasks more intuitive and
 readable.  Given a set of schedules TaskList provides an API to execute actions
 before, during, and after the schedule.  For example:
