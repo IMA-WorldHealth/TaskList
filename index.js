@@ -6,9 +6,9 @@ const debug = require('debug')('TaskList');
 const Task = require('./lib/task');
 
 const schedules = {
-  DAYLY: '30 23 * * *', // 23:30 daily
-  WEEKLY: '30 23 * * 7', // 23:30 on Sunday
-  MONTHLY: '30 23 1 * *' // 23:30 on the first day of the month.
+  daily: '30 23 * * *', // 23:30 daily
+  weekly: '30 23 * * 7', // 23:30 on Sunday
+  monthly: '30 23 1 * *' // 23:30 on the first day of the month.
 };
 
 // Pretty a time stamp for debug logs

@@ -16,6 +16,7 @@
   },
   "scripts": {
     "preversion" : "yarn test",
+    "prepublishOnly" : "yarn test",
     "test": "xo && nyc ava",
     "release": "standard-version",
     "postversion": "git push && git push --tags"
