@@ -12,3 +12,6 @@ branches:
   except:
     # do not build any branches that have *.tmp in their name
     - /.*\.tmp$/
+
+
+after_success: yarn run coverage
