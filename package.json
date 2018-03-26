@@ -5,19 +5,20 @@
   "main": "index.js",
   "author": "jniles",
   "license": "MIT",
-  "keywords" : [
+  "keywords": [
     "cron",
     "tasks",
     "scheduler",
     "schedule"
   ],
-  "engines" : {
-    "node" : ">=v8.10.0"
+  "engines": {
+    "node": ">=v8.1.0"
   },
   "scripts": {
-    "preversion" : "yarn test",
-    "prepublishOnly" : "yarn test",
+    "preversion": "yarn test",
+    "prepublishOnly": "yarn test",
     "test": "xo && nyc ava",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "release": "standard-version",
     "postversion": "git push && git push --tags"
   },
@@ -27,6 +28,7 @@
   },
   "devDependencies": {
     "ava": "^0.25.0",
+    "coveralls": "^3.0.0",
     "nyc": "^11.6.0",
     "standard-version": "^4.3.0",
     "xo": "^0.20.3"
